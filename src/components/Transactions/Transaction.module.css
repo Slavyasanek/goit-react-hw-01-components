@@ -1,0 +1,19 @@
+.transactions {
+    background-color: #F2EBFF;
+    width: 100%;
+    box-shadow: 0px -2px 29px -10px rgba(74,74,74,1);
+    color: #5C5666;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.transactions__title th {
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: 	#d2afff;
+}
+
+.transactions__body td {
+    border: 1px solid #d2afff;
+    padding: 8px;
+}
