@@ -1,0 +1,41 @@
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section__title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #695359;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .section__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.profile {
+  composes: section;
+  background-color: #fbefe6;
+}
+
+.friends {
+  composes: section;
+  background-color: #e2e2e9;
+}
+
+.data {
+  composes: section;
+  background-color: #b2d8d8;
+}
+
+.transactions {
+  composes: section;
+  background-color: #fffeb3;
+}
