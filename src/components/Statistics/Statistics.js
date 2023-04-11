@@ -3,10 +3,6 @@ import css from './Statistics.module.css';
 
 import StatisticsItem from "./StatisticsItem";
 
-function randomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
 const Statistics = ({ items }) => {
     return (
         <ul className={css.stats}>
@@ -14,8 +10,7 @@ const Statistics = ({ items }) => {
                 <StatisticsItem
                     key={dataItem.id}
                     label={dataItem.label}
-                    percentage={dataItem.percentage} 
-                    color={randomHexColor()}/>
+                    percentage={dataItem.percentage} />
             ))}
         </ul>
     )
