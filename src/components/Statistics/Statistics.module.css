@@ -3,6 +3,13 @@
     flex-direction: row;
 }
 
+.title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #695359;
+    text-align: center;
+}
+
 .stats__item {
     padding: 10px;
     display: flex;

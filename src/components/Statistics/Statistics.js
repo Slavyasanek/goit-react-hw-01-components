@@ -5,7 +5,7 @@ import StatisticsItem from "./StatisticsItem";
 
 const Statistics = ({ title, items}) => {
     return (<>
-        {title && (<h1>{title}</h1>)}
+        {title && (<h2 className={css.title}>{title}</h2>)}
         <ul className={css.stats}>
             {items.map(dataItem => (
                 <StatisticsItem
