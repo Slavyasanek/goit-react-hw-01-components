@@ -3,8 +3,9 @@ import css from './Statistics.module.css';
 
 import StatisticsItem from "./StatisticsItem";
 
-const Statistics = ({ items }) => {
-    return (
+const Statistics = ({ title, items}) => {
+    return (<>
+        {title && (<h1>{title}</h1>)}
         <ul className={css.stats}>
             {items.map(dataItem => (
                 <StatisticsItem
@@ -13,6 +14,7 @@ const Statistics = ({ items }) => {
                     percentage={dataItem.percentage} />
             ))}
         </ul>
+    </>
     )
 }
 

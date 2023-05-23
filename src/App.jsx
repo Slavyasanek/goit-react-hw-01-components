@@ -11,32 +11,33 @@ import Profile from "./components/Profile/Profile";
 import FriendsList from 'components/FriendsList/FriendsList';
 import TransactionHistory from 'components/Transactions/TransactionHistory';
 
-
 export const App = () => {
   return (
     <>
       <Section
         variant="profile"
         title="Task 1: Social Profile">
-        <Profile user={user} />
+        <Profile username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats} />
       </Section>
       <Section
-        variant="data"
-        title="Task 2: Upload stats">
+        variant="data">
         <Statistics items={data} />
       </Section>
       <Section
         variant="data">
-        <Statistics items={data}></Statistics>
+        <Statistics items={data} title="Task 3: Statistics"></Statistics>
       </Section>
       <Section
-        variant="friends"
-        title="Task 3: Friends List">
+        variant="friends">
         <FriendsList friends={friends}></FriendsList>
       </Section>
       <Section
         variant="transactions"
-        title="Task4: Transaction History">
+        title="Task 4: Transaction History">
           <TransactionHistory
           history={transactions}
           />
